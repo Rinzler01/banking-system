@@ -32,6 +32,8 @@ public class Tests
 		double amountToDebit = 44.00;
 		Account acc = new Account(1, "Selvyn", openingBalance);
 		
+		acc.debit(amountToDebit);
+		
 	}
 	
 	
