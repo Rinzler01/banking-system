@@ -11,4 +11,20 @@ public enum InterestRate
 		this.rate = rate;
 		
 	}
-}
+	
+	
+	public double rate()
+	{
+		return rate;
+	}
+
+	//public int rate() 
+//	{
+		// TODO Auto-generated method stub
+	//	return 0;
+	//}
+
+	//public double getRate() {
+	//	return rate;
+	//}
+}//

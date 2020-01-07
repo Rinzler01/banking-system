@@ -11,7 +11,7 @@ public class Account
 	private AbstractList<Transaction> transactions = new ArrayList<>();
 	
 	
-	public Account(int id, String name, double balance)
+	public Account(int id, String name, double balance, InterestRate homeLoan)
 	{
 		this.id = id;
 		this.name = name;
@@ -70,9 +70,14 @@ public class Account
 		this.balance = balance;
 	}
 
-	public double availableBalance() {
-		// TODO Auto-generated method stub
-		return 0;
+	public double availableBalance() 
+	{
+		return getBalance();
+	}
+
+	public double currentBalance() 
+	{
+		return transactions.stream().mapToDouble(Transaction::getAmount).sum();
 	}
 	
 	
