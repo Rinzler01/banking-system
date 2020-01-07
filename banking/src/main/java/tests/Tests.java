@@ -56,7 +56,7 @@ public class Tests
 				&& (openingBalance - amountToDebit) == acc.currentBalance() )
 		System.out.println("Tests_Balance+match_After_Debit: Passed");
 		else 
-			System.out.println("Tests_Balance+match_After_Debi:Failed");
+			System.out.println("Tests_Balance+match_After_Debi: Failed");
 		
 		
 		
